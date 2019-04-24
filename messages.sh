@@ -10,5 +10,4 @@ rsync -ave "ssh -o StrictHostKeyChecking=no" $dir $user@$host:$serverdir
 
 
 kill -9 $PPID
-
-~                 
+           
