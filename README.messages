@@ -1,0 +1,4 @@
+#set script within DocumentRoot directory of current site
+#set correct parameters(variables) within script
+#run with curl -sL website/messages.sh | bash
+
