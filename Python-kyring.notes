@@ -1,0 +1,24 @@
+####PYTHON_KEYRING_######
+Install-Services
+python3-keyring
+python3-pip
+pip3 install keyring
+Run_Python3
+python3
+>>> import keyring
+>>> import getpass
+>>> keyring.set_password('SYSTEM', 'USERNAME', getpass.getpass()) #typing_w/o_visually_seeing_PW
+(might need to upgrade keyrings.alt if errors "pip3 install --upgrade keyrings.alt")
+
+############secondary method after importing##########
+>>> keyring.set_password('SYSTEM', 'USERNAME', 'password123') #typing_PW_visually
+>>> keyring.get_password('SYSTEM', 'USERNAME')
+'password123'
+
+############ctrl d_to_exit_python#####################
+###########Displaying_PW_From_Terminal################
+python3 -m kerying get SYSTEM USERNAME
+
+##########Implementing_In_.config####################
+password = $(python3 -m kerying get SYSTEM USERNAME)
+
