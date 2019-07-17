@@ -2,5 +2,5 @@
 
 clear;
 read -p "Device/Ticket#:" device
-ht -o skus "$device" | egrep -i 'cas|ras|device'
+ht -o skus "$device" | egrep -i 'cas|ras|device|os version'
 
